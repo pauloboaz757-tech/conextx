@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conextx</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen" class="screen">
+  <h1 class="logo">Conextx</h1>
+  <input id="usernameInput" placeholder="Seu nome"/>
+  <button onclick="login()">Entrar</button>
+</div>
+
+<!-- APP -->
+<div id="appScreen" class="screen hidden">
+
+  <header>
+    <h2>Conextx</h2>
+    <button class="gear">⚙</button>
+  </header>
+
+  <main id="content">
+    <p>Bem-vindo 👋</p>
+  </main>
+
+  <nav>
+    <button onclick="showTab('feed')">Feed</button>
+    <button onclick="showTab('friends')">Amigos</button>
+    <button onclick="showTab('chat')">Chat</button>
+    <button onclick="showTab('profile')">Perfil</button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
